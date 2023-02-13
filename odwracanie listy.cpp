@@ -48,6 +48,22 @@ cout << "\n---------------------------------------------------" << endl;
         cout << tablica [i] << " ";
 
        
+    int lotto[49];
+    for (int i = 0;i < 49;i++)
+        lotto[i]=i+1;
+    
+    int liczb = 49;
+
+    for(int l = 1;l<=6;l++ ){
+        int los = rand()%liczb;
+        cout << lotto[los] << " ";
+        for ( ;los < liczb;los++)
+            lotto[los]=lotto[los+1];
+        liczb--;
+    }
+
+
+    
 
     
     
