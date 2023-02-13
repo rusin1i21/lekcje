@@ -64,7 +64,7 @@ cout << "\n---------------------------------------------------" << endl;
 
 
     
-
+    // tablica w zymiarem podanym, sprawdzic czy jest ta m liczba 5, czy jest tam jakas liczba podzielna przez 12, 
     
     
     return 0;
