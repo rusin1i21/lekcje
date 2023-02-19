@@ -1,0 +1,49 @@
+#include <iostream>
+#include <time.h>
+
+using namespace std;
+
+int main (int argc, char const *argv[])
+{
+    srand(time(0));
+    int lost = rand();
+    // cout << lost;
+
+    cout << "podaj rozmiar tablicy";
+
+    int rozmiar;
+    cin >> rozmiar;
+    int tablica[rozmiar]; 
+  // int *tablica = new int[rozmiar]
+    for (int i=0 ; i< rozmiar ;i++)
+        tablica[i]=(rand()%10)+1;
+
+    for (int i = 0; i <rozmiar; i++)
+        cout << tablica [i] << " ";
+
+cout << "tablica\n---------------------------------------------------" << endl;
+
+    
+cout << "sprawdzanie warunków\n---------------------------------------------------" << endl;
+  int licznikpodzielnosci = 0;
+    for(int i=0;i<rozmiar;i++){
+      if(tablica[i]%5==0){
+        
+        licznikpodzielnosci++;
+      }
+    }
+  cout << "jest " << licznikpodzielnosci << " liczb podzielnych przez 5";
+  int licznik12 = 0;
+    for(int i=0;i<rozmiar;i++){
+      if(tablica[i]==12){
+        
+        licznik12++;
+      }
+    }
+  cout << "\njest " << licznik12 << " liczb będącymi 12";
+
+    // tablica w zymiarem podanym, sprawdzic czy jest ta m liczba 5, czy jest tam jakas liczba podzielna przez 12,
+
+
+    return 0;
+}
