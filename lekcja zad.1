@@ -1,0 +1,105 @@
+#include <iostream>
+#include <time.h>
+
+using namespace std;
+
+int main (int argc, char const *argv[])
+{
+    srand(time(0));
+    int lost = rand();
+    // cout << lost;
+    int tablica[1000]; 
+  // int *tablica = new int[rozmiar]
+    for (int i=0 ; i < 1000 ;i++)
+        tablica[i]=(rand()%11)+10;
+
+    for (int i = 0; i <1000; i++)
+        cout << tablica [i] << " ";
+
+cout << "\ntablica\n---------------------------------------------------" << endl;
+    int licznik10;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==10)
+            licznik10++;
+    }
+    cout << "\njest " <<licznik10 << " dziesiątek";
+    int licznik11;
+
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==11)
+            licznik11++;
+    }
+    cout << "\njest " <<licznik11 << " jedenastek";
+    int licznik12;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==12)
+            licznik12++;
+    }
+    cout << "\njest " <<licznik10 << " dwunastek";
+
+    int licznik13;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==13)
+            licznik13++;
+    }
+    
+    cout << "\njest " <<licznik13 << " trzynastek";
+    
+    int licznik14;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==14)
+            licznik14++;
+    }
+    
+    cout << "\njest " <<licznik14 << " czternastek";
+
+    int licznik15;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==15)
+            licznik15++;
+    }
+    
+    cout << "\njest " <<licznik15 << " piętnastek";
+    
+    int licznik16;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==16)
+            licznik16++;
+    }
+    
+    cout << "\njest " <<licznik16 << " szesnastek";
+
+    int licznik17;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==17)
+            licznik17++;
+    }
+    
+    cout << "\njest " <<licznik17 << " siedemnastek";
+    
+    int licznik18;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==18)
+            licznik18++;
+    
+    }
+    
+    cout << "\njest " <<licznik18 << " osiemnastek";
+    
+    int licznik19;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==19)
+            licznik19++;
+    }
+    
+    cout << "\njest " <<licznik19 << " dziewiętnastek";
+    
+    int licznik20;
+    for (int i=0; i<1000;i++){
+        if(tablica[i]==20)
+            licznik20++;
+    }
+    
+    cout << "\njest " <<licznik20 << " dwudziestek";
+    return 0;
+}    
